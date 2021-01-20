@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+*{
+	margin:0;
+	padding:0; 
+}
+
+ul{
+	list-style:none;
+}
+li{
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+li a{
+ 	text-decoration: none;
+}
+header{
+	background-color: crimson;
+}
+div.nav-1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 0 ;
+	height: 100;
+}
+.nav-1 ul li{
+	padding: 1%;
+}
+.nav-1 .logo .select-menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	text-align: justify;
+}
+.logo{
+	padding: 1%;
+	width: 400px;
+}
+.logo a{
+	text-align: justify;
+}
+.nav-2 ul{
+	height: 40px;
+	display:flex;
+	flex-direction: row;
+	background-color: white;
+}
+.nav-2 ul li{
+	padding: 1%;
+}
+.select-menu ul {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+}
+div.select-menu ul li{
+	margin-top: 20px;
+	width: 120px;
+	height: 30px;
+}
+.context ul{
+	display: flex;
+	flex-direction: row;
+}
+div.article-header-row ul{
+	display: flex;
+	flex-direction: row;
+	padding:8px;
+}
+div.article-header-row{
+	padding:8px;
+}
+div.content-margin{
+	margin-left: 100px;
+	margin-right: 100px;
+	/* padding: 20px; */
+}
+div.article-message{
+	padding: 20px;
+}
+div.message-border{
+	border: solid 1px black;
+	padding: 10px;
+}
+div.search-container{
+	padding:8px;
+	border-radius: 15px;
+	background-color: rgb(230,230, 230);
+	display: flex;
+    flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 0.7rem;
+}
+input{
+	width: 80px;
+}
+div.item1{
+	padding: 10px;
+}
+input#dextination{
+	width: 190px;
+}
+div.item2{
+	padding: 10px;
+}
+div.item3{
+	padding: 10px;
+}
+div.item4{
+	padding: 10px;
+}
+div.select-menu5{
+	padding: 10px;
+}
+select#rooms{
+	width: 80px;
+}
+div.select-menu6{
+	padding: 10px;
+}
+select#adults{
+	width: 80px;
+}
+div.select-menu7{
+	padding: 10px;
+}
+select#children{
+	width: 80px;
+}
+div#search.item8{
+	padding: 10px;
+}
+button.font-bold{
+	padding: 10px;
+}
+button{
+	background-color: royalblue;
+	border-radius: 10px;
+}
+a#button{
+	margin: 8px;
+	background-color: blue;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding:  5px 30px;
+}
+h1#jeju{
+	padding: 5px 20px;
+}
+label.label-block{
+	display:flex;
+	flex-direction: row;
+}
+.section-anchors ul{
+	display: flex;
+	flex-direction: row;
+}
+div.article-header-row h1 
+{
+	padding:10px;
+	color: whitesmoke;
+}
+div.article-header-row p 
+{
+	padding:10px;
+	color: whitesmoke;
+}
+div.article-header-nav li{
+	color:white
+}
+div.header-image{
+	background-image: url(main-visual02.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+.title{
+	height: 100%;
+}
+.search-container form{
+	display: flex;
+	flex-direction: row;
+}
+.container form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.message-border ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.message-border li{
+	padding:8px;
+}
+div.section-anchors ul{
+	justify-content: space-evenly;
+	text-align: center;
+}
+div.content-margin-1{
+	margin-left: 200px;
+	margin-right: 200px;
+}
+div.section-anchors{
+	padding:20px;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+div.section-anchors li{
+	width: 55px;
+	background-color: rgb(230,230, 230);
+	border-radius: 10px;
+}
+div.deal-section{
+	margin-left: 200px;
+	margin-right: 200px;
+	background-color: rgb(230, 230, 230);
+	border-radius: 6px;
+}
+div.deal-section-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+div.deal-cards{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+div.deal-card{
+	width: 200px;
+	height: 300px;
+	background-color: white;
+	margin:  10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+div.deal-card img{
+	position: relative;
+	object-fit: cover;
+	padding:5px;
+	height: 130px;
+}
+div.botton-content{
+	padding: 10px 50px;
+}
+div.price-view{
+	color: rgb(55, 0, 255);
+	border: 1px solid;
+	padding: 10px 2px;
+	text-align: center;
+}
+div.deal-section-footer.deal-footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+}
+div.deal-section-footer.deal-footer a{
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	text-decoration: none;
+	border:1px solid;
+	background-color: blue;
+	border-color: blue;
+}
+footer{
+	display: flex;
+	flex-direction: column;
+}
+div#footer-menu1 p{
+	text-align: center;
+}
+div#footer-menu1 ul{
+	display: flex;
+	flex-direction: row;
+	padding-left: 10px;
+	padding-right: 10px;
+	justify-content: space-evenly;
+}
+div#footer-menu2{
+	display: flex;
+	flex-direction: column;
+}
+ul#select-guides{
+	display: flex;
+	flex-direction: row;
+}
+</style>
+</head>
+<body>
+	<header class="page-top">
+		<div class="nav-1">
+			<div class="logo">
+					<a><img src="KakaoTalk_20210115_124228620.png" width="200"></a>
+			</div>
+			<div class="select-menu">
+					<ul>
+						<li><a href=""><img alt="국기" src="KR-flag.ico"></a></li>
+						<li><a href="">"KRW"</a></li>
+						<li><a href="">도움말</a></li>
+						<li><a href="">내 예약 정보</a></li>
+						<li><a href="">회원가입</a></li>
+						<li><a href="">로그인</a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="nav-2">
+			<ul>
+				<li>특가 상품</li>
+				<li>사이트 이용 안내</li>
+				<li>숙박시설 등록하기</li>
+				<li>Hotels.com™ 호텔스닷컴 리워드</li>
+			</ul>
+		</div>	
+	</header>
+	
+	<!--메인부분 -->
+	<article>
+		<div class="article-header">
+			<div class="header-image">
+				<div class="content-margin">
+					<div class="article-header-row">
+						<div class="article-header-nav">
+							<ul>
+								<li><a href="#"><span>호텔 ></span></a></li>
+								<li><a href="#"><span>특가 상품 ></span></a></li>
+								<li><span>국내 펜션 특가</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="article-header-row">
+						<div class="title">
+							<h1>국내 펜션 특가</h1>
+							<p>지금 예약하세요!</p>
+						</div>
+					</div>
+					<div class="article-header-row">
+						<div class="search-container">
+							<form action="" role="search" autocomplete="off">
+								<div class="item1">
+									<label for="destination" class="label-block font-bold">
+										목적지 또는 숙박 시설을 입력하세요.
+									</label>
+									<span>
+										<input type="text" id="dextination">
+									</span>
+								</div>
+								<div class="item2">
+									<label for="check-in" class="label-block font-bold">
+										체크인
+									</label>
+									<span>
+										<input type="text" value="2021/01/24" placeholder="yyyy.mm.dd">
+									</span>
+									<label for="check-in" class="label-block">
+										일요일
+									</label>
+								</div>
+								<div class="item3">
+									<label for="check-out" class="label-block font-bold">
+										체크아웃
+									</label>
+									<span>
+										<input type="text" value="2021/01/25" placeholder="yyyy.mm.dd">
+									</span>
+									<label for="check-out" class="label-block">
+										월요일
+									</label>
+								</div>
+								<div class="item4">
+									
+										<span class="font-bold">
+											1
+										</span>
+									
+									<span class="num-nights-tag label-block">
+										박
+									</span>
+								</div>
+								<div class="select-menu5">
+									<label for="rooms" class="label-block font-bold">
+										객실
+									</label>
+									<span>
+										<select name="객실" id="rooms">
+											<option value="1" selected>1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9+">9+</option>
+										</select>
+									</span>
+								</div>
+								<div class="select-menu6">
+									<label for="adults" class="label-block font-bold">
+										성인
+									</label>
+									<span>
+										<select name="성인" id="adults">
+											<option value="1">1</option>
+											<option value="2" selected>2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9+">9+</option>
+										</select>
+									</span>
+									<label for="adults" class="label-block">
+										만 18세 이상
+									</label>
+								</div>
+								<div class="select-menu7">
+									<label for="children" class="label-block font-bold">
+										아동
+									</label>
+									<span>
+										<select name="아동" id="children">
+											<option value="0" selected>0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9+">9+</option>
+										</select>
+									</span>
+									<label for="children" class="label-block">
+										만 17세 이하
+									</label>
+								</div>
+								<div id="search" class="item8">
+									<button type="submit" name="search" class="font-bold">검색</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<article>
+		<div class="article-message">
+			<div class="content-margin-1">
+				<div class="message-border">
+					<ul>
+						<li><span>대부분의 호텔</span> <span>무료 취소</span></li>
+						<li><span>대부분의 객실</span> <span>지금 결제 또는 현장 결제 옵션</span></li>
+						<li>가격 보장</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</article>
+	
+	<article>
+		<div class="article-container">
+			<div class="content-margin3">
+				<div class="section-anchors">
+					<ul>
+						<li><a href="#">제주시</a></li>
+						<li><a href="#">서귀포</a></li>
+						<li><a href="#">강릉</a></li>
+						<li><a href="#">여수</a></li>
+						<li><a href="#">경주</a></li>
+						<li><a href="#">평창</a></li>
+						<li><a href="#">양양</a></li>
+						<li><a href="#">거제</a></li>
+						<li><a href="#">가평</a></li>
+						<li><a href="#">남해</a></li>
+						<li><a href="#">통영</a></li>
+						<li><a href="#">태안</a></li>
+					</ul>
+				</div>
+
+				<div class="deal-section">
+					<div class="deal-section-header deal-header">
+						<h1 id="jeju">제주시</h1>
+						<a id="button" href="">특가 상품 모두 보기</a>
+					</div>
+					<div class="deal-card-section">
+						<div class="deal-cards">
+							<div class="deal-card">
+								<img src="https://exp.cdn-hotels.com/hotels/20000000/19770000/19764600/19764575/3683e83d_b.jpg" alt="이미지1입니다.">
+								<div class="card-content">
+									<h5>반하크라펜션</h5>
+									<span>3.5성급</span>
+									<div>
+										<span>훌륭함 8.8 / 10</span>
+									</div>
+								</div>
+								<div class="botton-content" role="button">
+									<div class="price-view">
+										가격 보기
+									</div>
+								</div>
+							</div>
+							<div class="deal-card">
+								<img src="https://exp.cdn-hotels.com/hotels/20000000/19220000/19211200/19211197/fd2c7e42_b.jpg " alt="이미지2입니다.">
+								<div class="card-content">
+									<h5>송당송당 펜션앤리조트</h5>
+									<span>3성급</span>
+									<div>
+										<span>매우 좋음 8.0 / 10</span>
+									</div>
+								</div>
+								<div class="botton-content" role="button">
+									<div class="price-view">
+										가격 보기
+									</div>
+								</div>
+							</div>
+							<div class="deal-card">
+								<img src="https://exp.cdn-hotels.com/hotels/16000000/15140000/15136100/15136019/6ad2f0e7_b.jpg" alt="이미지3입니다.">
+								<div class="card-content">
+									<h5>허브인휴양펜션</h5>
+									<span>2.5성급</span>
+									<div>
+										<span>좋음 7.6 / 10</span>
+									</div>
+								</div>
+								<div class="botton-content" role="button">
+									<div class="price-view">
+										가격 보기
+									</div>
+								</div>
+							</div>
+							<div class="deal-card">
+								<img src="https://exp.cdn-hotels.com/hotels/15000000/14730000/14728400/14728344/b36e08f4_b.jpg" alt=" ">
+								<div class="card-content">
+									<h5>뷰티워 리조트</h5>
+									<span>3성급</span>
+									<div>
+										<span>좋음 7.4 / 10</span>
+									</div>
+								</div>
+								<div class="botton-content" role="button">
+									<div class="price-view">
+										가격 보기
+									</div>
+								</div>
+							</div>
+							<div class="deal-card">
+								<img src="https://exp.cdn-hotels.com/hotels/18000000/17730000/17728900/17728850/47537f95_b.jpg" alt=" ">
+								<div class="card-content">
+									<h5>해변풍경펜션</h5>
+									<span>3성급</span>
+									<div>
+										<span>좋음 7.0 / 10</span>
+									</div>
+								</div>
+								<div class="botton-content" role="button">
+									<div class="price-view">
+										가격 보기
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="deal-section-footer deal-footer">
+						<a href="">특가 상품 모두 보기</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</article>
+</section>
+</div>
+
+	<!-- 바닥부분 -->
+	<footer>
+		<div id="footer-menu1">
+			<p>다음 중 하나를 선택해 저렴하게 예약하세요!</p>
+			<ul>
+				<li><a href="">
+					<div>이메일</div>최신 프로모션 뉴스레터를 구독하세요.
+				</a></li>
+				<li><a href="">
+					<div>Hotels.com™</div>앱을 다운로드하여 언제나 어디서나 편리하게<br> 예약하세요.
+				</a></li>
+				<li><a href="">
+					<div>호텔스닷컴 리워드</div>지금 바로 가입하세요! 스탬프 10개를 모으면<br> 리워드* 1박!
+				</a></li>
+			</ul>
+		</div>
+		<div id="footer-menu2">
+			<ul>
+				<li><a href="">인기 목적지 ✔</a></li>
+				<li><a href="">인기 국가 및 지역 ✔</a></li>
+				<li><a href="">지원 및 자주 묻는 질문 ✔</a></li>
+				<li><a href="">공급업체, 제휴사, 미디어 해당 섹션 ✔</a></li>
+				<li><a href="">이용약관 및 개인정보 보호정책 ✔</a></li>
+				<li><a href="">사이트에 대한 의견</a></li>
+				<li><a href="">회사소개</a></li>
+				<li><a href="">숙박 시설 등록하기</a></li>
+				<li><a href="">채용</a></li>
+			</ul>
+			<ul id="select-guides">
+				<li><a href="">여행 가이드 |</a></li>
+				<li><a href="">  50개 인기 도시 |</a></li>
+				<li><a href="">  모든 국가 |</a></li>
+				<li><a href="">  사이트 색인</a></li>
+			</ul>
+		</div>
+		<div id="footer-detail">
+			<p>* 일부 호텔은 체크인 24시간 이상 전에 취소해야 합니다. 자세한 내용은 사이트에서 확인해 주세요.</p>
+		</div>
+	</footer>	  
+</body>
+</html>
