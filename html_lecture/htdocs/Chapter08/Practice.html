@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Practice.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                $('.outer-menu-item').hover(function(){
+                    $(this).find('.inner-menu').show();}, 
+                        function(){
+                            $(this).find('.inner-menu').hide();});
+            });
+    </script>
+</head>
+<body>
+    <div id="main-header">
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title">HTML5 Example Preview</h1>
+                <h2 class="master-description">한빛아카데미</h2>
+            </hgroup>
+        </header>
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="inner-menu-item">HTMl5</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="inner-menu-item">CSS</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="outer-menu-item">
+                        <span class="inner-menu-item">JavaScript</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="검색">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">HTML5 개요와 활용</h1>
+                        <p class="article-data">2019년 02월 14일</p>
+                    </div>
+                    <div class="article-body">
+                        <img src="http://placehold.it/430x280">
+                        <br>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <br>
+                        <p>consectetur adipisicing elit. Voluptas quaerat recusandae odio p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cupiditate ratione modi laudantium facere quibusdam delectus earum veniam magnam ad illo autem, commodi nostrum praesentium. Hic saepe nemo similique reiciendis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque sint enim ab, labore, rerum consequuntur asperiores neque voluptatem consectetur illo dignissimos blanditiis ea est unde animi libero culpa architecto ipsa?</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">HTML5 응용과 실습</h1>
+                        <p class="article-data">2019년 02월 17일</p>
+                    </div>
+                    <div class="article-body">
+                        <img src="http://placehold.it/430x280">
+                        <br>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <br>
+                        <p>consectetur adipisicing elit. Voluptas quaerat recusandae odio p</p>
+                        <p>consectetur adipisicing elit. Voluptas quaerat recusandae odio p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cupiditate ratione modi laudantium facere quibusdam delectus earum veniam magnam ad illo autem, commodi nostrum praesentium. Hic saepe nemo similique reiciendis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque sint enim ab, labore, rerum consequuntur asperiores neque voluptatem consectetur illo dignissimos blanditiis ea est unde animi libero culpa architecto ipsa?</p>
+                    </div>
+                </article>
+            </section>
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>카테고리</h3>
+                    <ul>
+                       <li><a href="#">데이터</a></li>
+                       <li><a href="#">데이터</a></li>
+                       <li><a href="#">데이터</a></li>
+                       <li><a href="#">데이터</a></li>
+                       <li><a href="#">데이터</a></li>
+                    </ul>
+                </div>
+                <div class="aside-list">
+                    <h3>최근 글</h3>
+                    <ul>
+                       <li><a href="#">데이터</a></li>
+                       <li><a href="#">데이터</a></li>
+                       <li><a href="#">데이터</a></li>
+                       <li><a href="#">데이터</a></li>
+                       <li><a href="#">데이터</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer id="main-footer">
+        <a href="#"class="footer-article">ITCookBook HTML5 Programming</a>
+    </footer>
+</body>
+</html>

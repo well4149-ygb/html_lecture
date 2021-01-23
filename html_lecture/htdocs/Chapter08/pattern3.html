@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>패턴3</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 960px;
+        height: 0 auto;
+        overflow: hidden;
+    }
+    #menu{
+        width: 260px;
+        float: left;
+        /* left로 입력해도 상관없습니다. */
+    }
+    #section{
+        width: 700px;
+        float: right;
+    }
+    li{
+        list-style: none;
+    }
+    @media screen and (max-width: 767px){
+        /* 스마트폰 사이즈에서는 전부 해제합니다. */
+        body{width: auto;}
+        #menu{width: auto; float: none;}
+        #section{width: auto; float: none;}
+    }
+    </style>
+</head>
+<body>
+    <div id="section">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <p>Voluptates aut accusantium eius at fuga! At deleniti totam deserunt officia quod voluptate laborum! Molestiae expedita cum suscipit eos accusamus illo qui.</p>
+    </div>
+    <div id="menu">
+        <ul>
+            <li>메뉴A</li>
+            <li>메뉴B</li>
+            <li>메뉴C</li>
+        </ul>
+    </div>
+</body>
+</html>
