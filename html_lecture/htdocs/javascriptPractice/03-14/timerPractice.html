@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title></title>
 </head>
 <script type="text/javascript">
 function showClock()
@@ -10,16 +10,15 @@ function showClock()
     var currentDate= new Date();
     var divClock=document.getElementById("divClock");
     var apm=currentDate.getHours();
-    if(apm<12)
-    {
+    
+    if(apm<12){
         apm="오전";
-    }
-    else
-    {
+    }else{
         apm="오후";
     }
     
     var msg = "현재시간 : "+apm +(currentDate.getHours()-12)+"시";
+    
     msg += currentDate.getMinutes() + "분";
     msg += currentDate.getSeconds() + "초";
     
